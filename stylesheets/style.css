@@ -1,0 +1,176 @@
+/*
+	Stylesheet for Random Chuck Norris Joke Generator
+	Author: Chris Jones
+	Date: 4/22/2016
+	version: 1.1
+	Revision History:
+	Version: 1.0 - Initial Application
+	Version: 1.1 - Added "Exclude explicit joke" functionality
+	Removed orange outline from button on mobile tap
+*/
+
+/*******************************************
+	BASE ELEMENT STYLES
+*******************************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #78919C;
+	color: #fff;
+	font-family: Georgia, serif;
+}
+
+h1 {
+	font-family: 'Black Ops One', serif;
+	font-size: 3em;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+
+h2 {
+	margin-top: 0;
+	color: #E5E4C0;
+	text-shadow: 0 0 5px #555;
+	letter-spacing: 2px;
+	font-size: 2em;
+}
+
+div,
+button {
+	margin: 0 auto;
+}
+
+button {
+	display: inline-block;
+	font-weight: 700;
+	color: #7A8B95;
+	padding: 20px;
+	margin-bottom: 10px;
+	background: #B8E5F5;
+	background: -webkit-linear-gradient(#B8E5F5, #AAD3E1);
+	background: linear-gradient(#B8E5F5, #AAD3E1);
+	cursor: pointer;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 5px 0 #8EB4C1;
+	outline: none !important;
+}
+
+button:hover {
+	background: #BDECFC;
+	background: -webkit-linear-gradient(#BDECFC, #B4DFEE);
+	background: linear-gradient(#BDECFC, #B4DFEE);
+	box-shadow: 0 5px 0 #9EC7D5;
+}
+
+button:active {
+	position: relative;
+	top: 5px;
+	box-shadow: none;
+}
+
+form {
+	text-align: center;
+}
+
+/*******************************************
+	CONTAINER STYLES
+*******************************************/
+
+#wrapper {
+	background: rgba(255,255,255,.1);
+	margin: 0 auto;
+	box-shadow: inset 0 0 5px #eee;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+}
+
+#title-container {
+	padding-top: 50px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+/*******************************************
+	USER INTERFACE STYLES
+*******************************************/
+
+.letterpress {
+	color: #496471;
+	text-shadow: 1px 1px rgba(255,255,255,.2), -1px -1px rgba(0,0,0,.5);
+}
+
+#output {
+	position: relative;
+	font-size: 1.25em;
+	margin-top: 10%;
+	width: 70%;
+	text-align: center;
+	min-height: 300px;
+	right: 150%;
+}
+
+	/*******************************************
+		Button Styles
+	*******************************************/
+
+	.btn-group {
+		text-align: center;
+		padding: 10px 0;
+		padding-top: 20px;
+	}
+
+	.btn-group button {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+
+
+	/*******************************************
+		Widget Styles
+	*******************************************/
+
+	#count-widget {
+		position: absolute;
+		top: 20px;
+		background: #E5E4C0;
+		color: #496471;
+		padding: 5px 10px;
+		border-top-right-radius: 25px;
+		border-bottom-right-radius: 25px;
+	}
+
+/*******************************************
+	ANIMATION STYLES
+*******************************************/
+
+.animate {
+	-webkit-transition: all 1s;
+	transition: all 1s;
+}
+
+.slide-off-left {
+	left: -150%;
+}
+
+.slide-in-right {
+	left: 0; 
+}
+
+/*******************************************
+	RESPONSIVE STYLES
+*******************************************/
+
+@media (min-width: 765px) {
+
+	#wrapper {
+		width: 70%;
+		max-width: 1280px;
+	}
+
+}
